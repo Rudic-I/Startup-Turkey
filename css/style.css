@@ -1,0 +1,1119 @@
+@import 'https://fonts.googleapis.com/css?family=Exo+2';
+@import 'https://fonts.googleapis.com/css?family=PT+Sans';
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+ol {
+   list-style-type: none;
+}
+
+ul {
+   list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.clear {
+	clear: both;
+}
+
+/*---------------header---------------*/
+
+header {
+    position: relative;
+    border: 1px solid white;
+    object-fit: contain;
+    height: 700px;
+    background-image: url(../images/video-overlay.png);
+    overflow: hidden;
+}
+
+/*-------------main menu-------------*/
+
+#top img {
+   padding: 30px;
+   float: left;
+}
+
+#navLine {
+   float: right;
+   padding-top: 10px;
+}
+
+#navLine li {
+   display: inline-block;
+   margin: 10px;
+   margin-top: 20px;
+}
+
+#navLine li a {
+   color: lightgray;
+   text-transform: uppercase;
+   font-size: 1em;
+   font-weight: 700;
+   font-family: "PT Sans"
+}
+
+#navLine li a:hover {
+	color: white;
+}
+
+#navLine li i {
+   color: red;
+   padding-right: 25px;
+   padding-left: 15px;
+   font-weight: 700;
+   cursor: pointer;
+}
+
+#aplication {
+	border: 1px solid white;
+	margin-left: 10px;
+	padding: 10px 10px;
+}
+
+#aplication:hover {
+	background-color: #de525e;
+	border: 1px solid #de525e;
+}
+
+#top i {
+   color: red;
+   padding-right: 25px;
+   padding-left: 15px;
+   font-weight: 700;
+   cursor: pointer;
+}
+
+.burgerSticky {
+	position: fixed;
+	top: 44px;
+	left: 95%;
+	visibility: hidden;
+	color: red;
+   padding-right: 25px;
+   padding-left: 15px;
+   font-weight: 700;
+   cursor: pointer;
+}
+
+.sticky {
+	visibility: initial;
+	position: fixed;
+	top: 44px;
+	left: 95%;
+	/*visibility: hidden;*/
+	color: red;
+   padding-right: 25px;
+   padding-left: 15px;
+   font-weight: 700;
+   cursor: pointer;
+	/*top: 0;*/
+	/*position: fixed;*/
+	/*z-index: 50;*/
+	/*margin: auto;*/
+	/*box-shadow: 5px 0px 10px #29353A;*/
+}
+
+/*-------------end of main menu-------------*/
+
+/*----------------hidden menu---------------*/
+
+.menu2 {
+	visibility: hidden;
+}
+
+.hiddenMenu {
+	background-color: #c63a46;
+	/*position: absolute;*/
+	width: 100%;
+	z-index: 999;
+	padding-bottom: 30px;
+	top: 0%;
+	position: fixed;
+}
+
+.hiddenLogo, .hiddenAbout, .hiddenContact, .hiddenSocial {
+	display: inline-block;
+	vertical-align: top;
+	border-left: 1px solid lightgray;
+	width: 18%;
+}
+
+.hiddenAbout, .hiddenContact, .hiddenSocial {
+	margin-top: 30px;
+	margin-left: 30px;
+}
+
+.hiddenAbout a, .hiddenContact a, .hiddenSocial a {
+	color: lightgray;
+	font-family: "PT Sans";
+	font-size: 1.1em;
+	font-weight: 700;
+	text-transform: uppercase;
+	padding: 10px;
+}
+
+.hiddenAbout li, .hiddenContact li, .hiddenSocial li {
+	padding: 10px;
+}
+
+.hiddenLogo {
+	padding: 30px;
+}
+
+.fa-times {
+	float: right;
+	margin-top: 30px;
+	margin-right: 30px;
+	color: lightgray;
+	cursor: pointer;
+}
+
+#attend {
+	border: 1px solid lightgray;
+	padding: 10px 30px;
+}
+
+#attend:hover {
+	background-color: #de525e;
+	border: 1px solid #de525e;
+	color: white;
+}
+
+/*-------------end of hidden menu-------------*/
+
+#bgvid { 
+    position: absolute;
+   top: 50%;
+   left: 50%;
+   min-width: 100%;
+   min-height: 100%;
+   width: auto;
+   height: auto;
+   z-index: -100;
+   -ms-transform: translateX(-50%) translateY(-50%);
+   -moz-transform: translateX(-50%) translateY(-50%);
+   -webkit-transform: translateX(-50%) translateY(-50%);
+   transform: translateX(-50%) translateY(-50%);
+}
+
+.headline {
+	color: white;
+	width: 100%;
+	display: inline-block;
+	text-align: center;
+	margin: auto;
+	position: absolute;
+	top: 30%;
+}
+
+.headline h1 {
+	font-family: "Exo 2";
+	font-size: 9vh;
+}
+
+.headline h2 {
+	font-family: "Exo 2";
+	font-size: 7vh;
+	padding-top: 15px;
+}
+
+.headline p {
+	font-family: "PT Sans";
+	font-size: 3vh;
+	padding-top: 10px;
+}
+
+.reqInvitation {
+	position: absolute;
+	width: 100%;
+	top: 60%;
+	text-align: center;
+	margin: auto;
+
+}
+
+.reqForm {
+	display: inline-block;
+
+}
+
+.reqInput {
+	width: 380px;
+	height: 50px;
+	font-family: "PT Sans";
+	font-size: 1.1em;
+}
+
+.btnForm {
+	width: 200px;
+	height: 54px;
+	font-size: 1.1em;
+	font-family: "PT Sans";
+	background-color: #c63a46;
+	border: 2px solid #c63a46;
+	cursor: pointer;
+	color: white;
+}
+
+.btnForm:hover {
+	background-color: #de525e;
+	border: 2px solid #de525e;
+}
+
+.fa-volume-off {
+	color: white;
+	font-size: 2.5em !important;
+	position: absolute;
+	top: 80%;
+	left: 90%;
+	cursor: pointer;
+}
+
+.fa-volume-up {
+	color: white;
+	font-size: 2.5em !important;
+	position: absolute;
+	top: 80%;
+	left: 90%;
+	cursor: pointer;
+	visibility: hidden;
+}
+
+.audio {
+	visibility: initial;
+}
+
+.bumper1 {
+    height: 60px;
+    width: 100%;
+    background: url(../images/cut-left.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: -60px;
+    z-index: 3;
+    position: relative; 
+}
+
+/*--------------end of header--------------*/
+
+/*-------------section winners-------------*/
+
+.winners {
+	margin-top: 100px;
+	text-align: center;
+	font-family: "Exo 2";
+}
+
+.winners h3 {
+	font-size: 7vh;
+	text-transform: uppercase;
+	color: #5b5b5b;
+	border-bottom: 4px solid #c63a46;
+	display: inline-block;
+}
+
+.winnersList li {
+	display: inline-block;
+	padding: 30px;
+}
+
+.winnersList li p {
+	padding-top: 20px;
+}
+
+#alotechClick {
+	cursor: pointer;
+}
+
+/*------------end of section winners-----------*/
+
+/*-----------section audience choice-----------*/
+
+.audienceChoice {
+	text-align: center;
+	padding-top: 30px;
+	font-family: "Exo 2"
+}
+
+.audienceChoice h3 {
+	font-size: 7vh;
+	color: #5b5b5b;
+	border-bottom: 4px solid #c63a46;
+	display: inline-block;
+}
+
+#audienceChoiceDiv {
+	padding-top: 30px;
+}
+
+#audienceChoiceDiv p {
+	padding: 20px 0px 40px 0px;
+}
+
+#audienceChoiceBTN {
+	font-size: 2.2vh;
+	text-transform: uppercase;
+	display: inline-block;
+	width: 15%;
+	padding: 15px 0px;
+	background-color: #c63a46;
+	color: white;
+	margin-bottom: 60px;
+}
+
+#audienceChoiceBTN:hover {
+	background-color: #de525e;
+	color: white;
+}
+
+/*------end of section audience choice------*/
+
+/*--------------section event--------------*/
+
+.spacer {
+	width: 100%;
+	height: 150px;
+}
+
+.event {
+	margin-top: 60px;
+}
+
+.event h3 {
+	font-family: "Exo 2";
+	font-size: 9vh;
+	display: inline-block;
+	width: 30%;
+	float: left;
+	text-align: right;
+	color: #c63a46;
+	padding-right: 20px;
+}
+
+.event p {
+	font-family: "PT Sans";
+	display: inline-block;
+	font-size: 3vh;
+	float: left;
+	width: 65%;
+	text-align: left;
+	padding-top: 20px;
+	line-height: 1.5;
+	color: #5b5b5b;
+}
+
+.event article {
+	width: 90%;
+	margin: auto;
+	text-align: center;
+}
+
+#eventInvitationBTN {
+	text-transform: uppercase;
+	font-family: "PT Sans";
+	font-size: 2.2vh;
+	text-align: center;
+	margin: 60px auto;
+	width: 15%;
+	padding: 15px 0px;
+	border:1px solid #c63a46;
+	color: #c63a46;
+}
+
+#eventInvitationBTN:hover {
+	background-color: #c63a46;
+	color: white;
+}
+
+/*-----------end of section event-------------*/
+
+/*--------------section numbers--------------*/
+
+.numbers {
+	background: url(../images/pattern.png), url(../images/collage.jpg);
+	background-repeat: repeat, no-repeat;
+	background-size: 6px, cover;
+	background-attachment: fixed;
+	text-align: center;
+	margin-top: 100px;
+	height: 600px;
+}
+
+.numbers img {
+	width: 100%;
+}
+
+.numbers article {
+	display: inline-block;
+	width: 20%;
+	color: white;
+	padding: 50px 0px;
+}
+
+.numbers article h3 {
+	font-family: "Exo 2";
+	font-size: 17vh;
+}
+
+.numbers article p {
+	font-family: "PT Sans";
+	font-size: 6vh;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+#photosBTN {
+	text-transform: uppercase;
+	font-family: "PT Sans";
+	font-size: 2.2vh;
+	font-weight: 700;
+	margin: 60px auto;
+	width: 15%;
+	padding: 15px 0px;
+	border:1px solid white;
+	color: white;
+	letter-spacing: 2px;
+}
+
+#photosBTN:hover {
+	background-color: #de525e;
+	border: 1px solid #de525e;
+	color: white;
+}
+
+.bumper2 img {
+	width: 100%;
+	height: 60px;
+	position: absolute;
+	margin-top: -60px;
+}
+
+/*----------end of section numbers-----------*/
+
+/*-------------section speakers--------------*/
+
+.speakers {
+	text-align: center;
+	margin-top: 60px;
+
+}
+
+.speakers h3 {
+	font-family: "Exo 2";
+	font-size: 7vh;
+	text-transform: uppercase;
+	color: #5b5b5b;
+	border-bottom: 4px solid #c63a46;
+	display: inline-block;
+}
+
+.speakers p {
+	font-family: "PT Sans";
+	font-size: 3vh;
+	width: 85%;
+	margin: auto;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	line-height: 1.5;
+	color: #5b5b5b;
+}
+
+.speakers ul {
+	width: 60%;
+	margin: auto;
+}
+
+.speakers li {
+	display: inline-block;
+	padding: 35px 0px;
+	width: 23%;
+	vertical-align: top;
+}
+
+.speakers li h4 {
+	font-family: "Exo 2";
+	font-size: 3.1vh;
+	color: #5b5b5b;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.speakers li p {
+	font-family: "PT Sans";
+	font-size: 2.1vh;
+	color: #5b5b5b;
+	padding-top: 0px;
+	padding-bottom: 10px;
+}
+
+#speakersBTN {
+	font-family: "PT Sans";
+	text-transform: uppercase;
+	font-size: 2.2vh;
+	display: inline-block;
+	width: 15%;
+	padding: 15px 0px;
+	background-color: #c63a46;
+	color: white;
+	margin-bottom: 60px;
+}
+
+#speakersBTN:hover {
+	background-color: #de525e;
+	color: white;
+}
+
+/*----------end of section speakers-----------*/
+
+/*------------section tech-crunch-------------*/
+
+.techCrunch {
+	background: url(../images/pattern.png), url(../images/press-back.jpg);
+	background-repeat: repeat, no-repeat;
+	background-size: 6px, cover;
+	background-attachment: fixed;
+	text-align: center;
+	margin-top: 100px;
+	height: 600px;
+
+}
+
+.techCrunch .line {
+	width: 100%;
+}
+
+.bumper3 {
+	position: absolute;
+	margin-top: -60px;
+	width: 100%;
+	height: 60px;
+}
+
+.techCrunch h4 {
+	font-family: "Exo 2";
+	font-size: 6vh;
+	text-transform: uppercase;
+	color: white;
+	display: inline-block;
+	width: 70%;
+	margin-top: 140px;
+}
+
+.techCrunch .techLogo {
+	margin-top: 60px;
+}
+
+/*---------end of section tech-crunch----------*/
+
+/*-------------section investors---------------*/
+
+.investors {
+	text-align: center;
+	margin-top: 100px;
+}
+
+.investors h3 {
+	font-family: "Exo 2";
+	font-size: 7vh;
+	text-transform: uppercase;
+	color: #5b5b5b;
+	display: inline-block;
+	margin-top: 30px;
+}
+
+.investors h3 span {
+border-bottom: 4px solid #c63a46;
+}
+
+.investors p {
+	font-family: "PT Sans";
+	font-size: 3vh;
+	width: 85%;
+	margin: auto;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	line-height: 1.5;
+	color: #5b5b5b;
+}
+
+.investors ul {
+	width: 80%;
+	margin: auto;
+}
+
+.investors li {
+	display: inline-block;
+	padding: 35px 0px;
+	width: 18%;
+}
+
+/*---------end of section investors------------*/
+
+/*-------------section challenge---------------*/
+
+.challenge {
+	background: url(../images/pattern.png), url(../images/startups-home-back.jpg);
+	background-repeat: repeat, no-repeat;
+	background-size: 6px, cover;
+	background-attachment: fixed;
+	text-align: center;
+	margin-top: 100px;
+	height: 600px;
+	color: white;
+}
+
+.challenge img {
+	width: 100%;
+	height: 60px;
+}
+
+.challenge h3 {
+	font-family: "Exo 2";
+	font-size: 7vh;
+	text-transform: uppercase;
+	display: inline-block;
+	margin-top: 80px;	
+}
+
+.challenge p {
+	font-family: "PT Sans";
+	font-size: 3.2vh;
+	width: 85%;
+	margin: auto;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	line-height: 1.5;
+}
+
+.challenge span {
+	font-weight: 700;
+}
+
+#applicationBTN {
+	text-transform: uppercase;
+	font-family: "PT Sans";
+	font-size: 2.2vh;
+	font-weight: 700;
+	margin: 60px auto;
+	width: 15%;
+	padding: 15px 0px;
+	border:1px solid white;
+	color: white;
+	letter-spacing: 2px;
+}
+
+#applicationBTN:hover {
+	background-color: #de525e;
+	border: 1px solid #de525e;
+	color: white;
+}
+
+/*----------end of section challenge-----------*/
+
+/*--------------section startups---------------*/
+
+.startups {
+	text-align: center;
+	margin-top: 100px;
+}
+
+.startups h3 {
+	font-family: "Exo 2";
+	font-size: 7vh;
+	text-transform: uppercase;
+	color: #5b5b5b;
+	display: inline-block;
+	margin-top: 30px;
+	border-bottom: 4px solid #c63a46;
+}
+
+.startups p {
+	font-family: "PT Sans";
+	font-size: 3vh;
+	width: 85%;
+	margin: auto;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	line-height: 1.5;
+	color: #5b5b5b;
+}
+
+.startups ul {
+	width: 80%;
+	margin: auto;
+}
+
+.startups li {
+	display: inline-block;
+	padding: 35px 0px;
+	width: 18%;
+}
+
+#startupsBTN {
+	font-family: "PT Sans";
+	text-transform: uppercase;
+	font-size: 2.2vh;
+	display: inline-block;
+	width: 15%;
+	padding: 15px 0px;
+	background-color: #c63a46;
+	color: white;
+	margin-bottom: 60px;
+}
+
+#startupsBTN:hover {
+	background-color: #de525e;
+	color: white;
+}
+
+/*----------end of section startups------------*/
+
+/*--------------section sponsors---------------*/
+
+.sponsors {
+	text-align: center;
+	margin-top: 100px;
+}
+
+.sponsors h3 {
+	font-family: "Exo 2";
+	font-size: 7vh;
+	text-transform: uppercase;
+	color: #5b5b5b;
+	display: inline-block;
+	margin-top: 30px;
+	border-bottom: 4px solid #c63a46;
+}
+
+.sponsors ul {
+	width: 80%;
+	margin: auto;
+}
+
+.sponsors li {
+	display: inline-block;
+	padding: 35px 0px;
+	width: 23%;
+}
+
+.sponsors li:last-child {
+	padding-bottom: 0px;
+}
+
+.sponsorsFirstLine li {
+	width: 45%;
+}
+
+/*----------end of section sponsors------------*/
+
+/*--------------section partners---------------*/
+
+.partners {
+	text-align: center;
+	margin-top: 50px;
+}
+
+.partners h3 {
+	font-family: "Exo 2";
+	font-size: 7vh;
+	text-transform: uppercase;
+	color: #5b5b5b;
+	display: inline-block;
+	margin-top: 15px;
+	margin-bottom: 30px;
+	border-bottom: 4px solid #c63a46;
+}
+
+.partners ul {
+	width: 80%;
+	margin: auto;
+}
+
+.partners li {
+	display: inline-block;
+	padding: 35px 0px;
+	width: 23%;
+}
+
+/*---------end of section partners----------*/
+
+/*--------------section media---------------*/
+
+.media {
+	text-align: center;
+}
+
+.media h3 {
+	font-family: "Exo 2";
+	font-size: 7vh;
+	text-transform: uppercase;
+	color: #5b5b5b;
+	display: inline-block;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	border-bottom: 4px solid #c63a46;
+}
+
+.media ul {
+	width: 80%;
+	margin: auto;
+}
+
+.media li {
+	display: inline-block;
+	padding: 35px 0px;
+	width: 23%;
+}
+
+/*---------end of section media----------*/
+
+/*----------section more-----------*/
+
+.more {
+	text-align: center;
+	margin-top: 100px;
+}
+
+.more h5 {
+	font-family: "Exo 2";
+	font-size: 6vh;
+	font-weight: 100;
+}
+
+.more p {
+	font-family: "PT Sans";
+	margin-top: 20px;
+	margin-bottom: 50px;
+}
+
+#pdfBTN {
+	text-transform: uppercase;
+	font-family: "PT Sans";
+	font-size: 2.2vh;
+	text-align: center;
+	margin: 60px auto;
+	/*margin-bottom: 100px;*/
+	width: 15%;
+	padding: 15px 0px;
+	border:1px solid #c63a46;
+	color: #c63a46;
+}
+
+#pdfBTN:hover {
+	background-color: #c63a46;
+	color: white;
+}
+
+/*---------end of section more----------*/
+
+/*------------section links-------------*/
+
+
+.links {
+	background-color: #272727;
+	text-align: center;
+	margin-top: 50px;
+	position: relative;
+	z-index: -100;
+}
+
+.linksTop {
+	position: absolute;
+	width: 100%;
+	height: 70px;
+	top: -29%;
+	left: 0%;
+	
+}
+
+.links h6 {
+	font-family: "Exo 2";
+	font-size: 3.5vh;
+	font-weight: 200;
+	text-transform: uppercase;
+	color: lightgray;
+	display: inline-block;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+.links ul {
+	width: 90%;
+	margin: auto;
+}
+
+.links li {
+	display: inline-block;
+	padding: 35px 0px;
+	width: 16%;
+	margin-bottom: 30px;
+}
+
+/*---------end of section links----------*/
+
+/*----------------footer-----------------*/
+
+footer {
+	background-image: url(../images/footer-back.jpg);
+	background-attachment: fixed;
+	position: relative;
+}
+
+.footerWrap {
+	background: rgba(36, 36, 36, 0.960784);
+	height: 410px;
+	margin-top: -363px;
+	
+}
+
+.footer1Line {
+	padding-top: 50px;
+	width: 90%;
+	height: 60px;
+	margin: auto;
+	text-align: center;
+}
+
+.invitation {
+	float: left;
+}
+
+.invitationForm {
+	display: inline-block;
+}
+
+.invitationInput {
+	width: 380px;
+	height: 50px;
+	font-family: "PT Sans";
+	font-size: 1.1em;
+}
+
+.btnForm {
+	width: 200px;
+	height: 54px;
+	font-size: 1.1em;
+	font-family: "PT Sans";
+	background-color: #c63a46;
+	border: 2px solid #c63a46;
+	cursor: pointer;
+	color: white;
+}
+
+.btnForm:hover {
+	background-color: #de525e;
+	border: 2px solid #de525e;
+}
+
+.social {
+	float: right;
+}
+
+.social li {
+	display: inline-block;
+	padding-left: 20px;
+}
+
+.social a {
+	color: lightgray;
+	font-size: 8vh;
+}
+
+.footer2Line {
+	width: 90%;
+	margin: auto;
+	margin-top: 60px;
+}
+
+.footer2Line ul {
+	float: left;
+	width: 15%;
+}
+
+.footer2Line ul li h4 {
+	font-family: "Exo 2";
+	font-size: 3.5vh;
+	font-weight: 200;
+	color: #de525e;
+	margin-bottom: 10px;
+}
+
+.footer2Line ul li {
+	padding-bottom: 5px;
+}
+
+.footer2Line ul li a {
+	color: lightgray;
+	font-family: "PT Sans";
+}
+
+.footer2Line img {
+	float: right;
+	padding-top: 50px;
+}
+
+/*------------end of footer---------------*/
+
+/*------------section modal---------------*/
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.modal img {
+	float: left;
+	width: 25%;
+	padding: 50px;
+}
+
+.modal-text {
+	background-color: white;
+	padding: 20px 20px;
+}
+
+.modal h3 {
+	font-family: "Exo 2";
+	font-size: 5vh;
+	color: #5b5b5b;
+	padding-bottom: 15px;
+}
+
+.modal a {
+	color: rgb(66, 139, 202);
+	font-family: "PT Sans";
+}
+
+.modal p {
+	font-family: "PT Sans";
+	font-size: 2.1vh;
+	color: #5b5b5b;
+	padding-top: 15px;
+}
+
+.modal-content {
+	margin: auto;
+	width: 40%;
+	box-shadow: 5px 5px 10px #5b5b5b;
+}
