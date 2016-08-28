@@ -101,10 +101,10 @@ header {
 	left: 95%;
 	visibility: hidden;
 	color: red;
-   padding-right: 25px;
-   padding-left: 15px;
-   font-weight: 700;
-   cursor: pointer;
+   	padding-right: 25px;
+   	padding-left: 15px;
+   	font-weight: 700;
+   	cursor: pointer;
 }
 
 .sticky {
@@ -112,17 +112,11 @@ header {
 	position: fixed;
 	top: 44px;
 	left: 95%;
-	/*visibility: hidden;*/
 	color: red;
-   padding-right: 25px;
-   padding-left: 15px;
-   font-weight: 700;
-   cursor: pointer;
-	/*top: 0;*/
-	/*position: fixed;*/
-	/*z-index: 50;*/
-	/*margin: auto;*/
-	/*box-shadow: 5px 0px 10px #29353A;*/
+   	padding-right: 25px;
+   	padding-left: 15px;
+   	font-weight: 700;
+   	cursor: pointer;
 }
 
 /*-------------end of main menu-------------*/
@@ -1071,7 +1065,7 @@ footer {
 .modal {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
+    z-index: 999; /* Sit on top */
     padding-top: 100px; /* Location of the box */
     left: 0;
     top: 0;
